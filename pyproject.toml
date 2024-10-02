@@ -3,19 +3,19 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "data-profiler-x"
+name = "insightpy"
 version = "0.0.1"
 description = "A data profiling library for in-depth data analysis."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 
-[project.authors]
-name = "habib-z"
-email = "my.email@gmail.com"
+authors = [
+  {name = "habib-z"},
+]
 
 [project.urls]
-homepage = "https://github.com/habib-z/data-profiler-x"
+homepage = "https://github.com/habib-z/insightpy"
 
 [project.dependencies]
 pandas = ">=2.2.2"

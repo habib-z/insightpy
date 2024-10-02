@@ -25,6 +25,17 @@ jobs:
           pip install -r requirements.txt
           pip install -e .[dev]  # Install development dependencies for testing
 
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
+
+
+      - name: Display current directory structure
+        run: |
+          echo "Current directory:"  
+          pwd  
+          echo "Listing files:"  
+          ls -R  # List all files recursively  
+
       - name: Run tests
         run: pytest tests  # Ensure your test folder is named "tests"
 
