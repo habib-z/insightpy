@@ -21,15 +21,15 @@ class Dataset:
 
     def _extract_features(self):
         """Dynamically create features based on the data type of each column."""
-        features = []
+        features = {}
         for column in self.dataframe.columns:
             if column==self.target_column:
                 pass
             else:
                 if self.is_numeric(column):
-                    features.append(NumericalFeature(column, self.dataframe[column]))
+                    features[column]=NumericalFeature(column, self.dataframe[column])
                 else:
-                    features.append(CategoricalFeature(column, self.dataframe[column]))
+                    features[column]=CategoricalFeature(column, self.dataframe[column])
         return features
 
     def is_numeric(self, column:str):
