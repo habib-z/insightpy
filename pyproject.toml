@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "insightpy"
-version = "0.0.1"
+version = "0.0.2"
 description = "A data profiling library for in-depth data analysis."
 readme = "README.md"
 requires-python = ">=3.10"
