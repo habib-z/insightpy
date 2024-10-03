@@ -1,6 +1,6 @@
 # Unit tests for data summary module
 import unittest
-from insightpy.core.data_summary import DataSummary
+from insightpy.core.analyzer.data_summary import DataSummary
 import pandas as pd
 
 class TestDataSummary(unittest.TestCase):

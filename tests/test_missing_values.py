@@ -1,6 +1,6 @@
 # Unit tests for missing values module
 import unittest
-from insightpy.core.missing_values import MissingValues
+from insightpy.core.analyzer.missing_value import MissingValues
 import pandas as pd
 
 class TestMissingValues(unittest.TestCase):
