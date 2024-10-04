@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from feature_type import determine_feature_type
+from insightpy.core.utils import determine_feature_type
 
 
 def test_determine_feature_type():

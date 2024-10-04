@@ -3,7 +3,7 @@ from sklearn.preprocessing import OneHotEncoder
 from scipy.stats import chi2_contingency, f_oneway
 import pandas as pd
 class CategoricalFeature(Feature):
-    def summary(self):
+    def summary(self,target):
         return {
             "categories": self.data.unique(),
             "missing_values": self.data.isnull().sum(),
@@ -52,3 +52,6 @@ class CategoricalFeature(Feature):
             print(f"Feature {self.data.name} is not significant for the target.")
 
         # return encoded_feature
+
+    def recommendation(self, target):
+        pass
