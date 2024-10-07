@@ -61,7 +61,7 @@ class NumericalFeature(Feature):
         self.handle_regression(target)
         feature_name=self.name
         feature_stats=self.stats
-        summary = f"Feature: {feature_name}\n"
+        summary = f"Feature: {feature_name} (Numerical)\n"
         summary += "=" * (len(summary) - 1) + "\n"
 
         # Basic Statistics

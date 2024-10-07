@@ -37,6 +37,9 @@ pip install insightpy
 ```
 
 ### Usage:
-Not implemented yet
+```python
+df=pd.read_csv("./data.csv")
+insightpy.analyze(df,column_name)
+```
 
 More features and UI will be added soon!
